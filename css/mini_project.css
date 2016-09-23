@@ -1,0 +1,46 @@
+body {
+	background-color:#FAFAFA;
+  white-space:nowrap;
+  overflow-y:hidden;;
+	margin-left: 50px;
+	margin-left: 50px;
+	font-family: Helvetica;
+	position:center;
+	text-align: center;
+	font-size:180px;
+	font-weight:800;
+	line-height:180px;
+	letter-spacing:-0.06em;
+	word-spacing:-0.05em;
+}
+
+a:link {
+    color: #2E1505;
+}
+
+a:visited {
+    color: #2E1505;
+}
+
+a:hover {
+	color: #FFF700;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a{
+  font-family: Helvetica;
+  position:center;
+  text-align: center;
+  font-size:180px;
+	font-weight:800;
+	line-height:180px;
+	letter-spacing:-0.06em;
+	word-spacing:-0.05em;
+}
