@@ -1,0 +1,50 @@
+ .square {
+   position: absolute;
+   background-color: red;
+   width:10px;
+   height:10px;
+ }
+
+ .rec15 {
+   position: absolute;
+   background-color: green;
+   width:10px;
+   height:15px;
+ }
+
+ .rec20 {
+   position: absolute;
+   background-color: green;
+   width:10px;
+   height:20px;
+ }
+
+
+ .rec45 {
+   position: absolute;
+   background-color: black;
+   width:10px;
+   height:45px;
+ }
+
+ .bar40 {
+   position: absolute;
+   background-color: blue;
+   width:40px;
+   height:10px;
+ }
+
+ .rec50 {
+   position: absolute;
+   background-color: black;
+   width:10px;
+   height:50px;
+ }
+
+
+
+#A {
+  position:absolute;
+  left:500px;
+  top:200px;
+}
