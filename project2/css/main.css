@@ -1,50 +1,280 @@
+.flex-container {
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  min-height: 100vh; /*responsive bottom*/
+
+}
+
+
  .square {
    position: absolute;
-   background-color: red;
+   background-color: #ED4512;
    width:10px;
    height:10px;
  }
 
  .rec15 {
    position: absolute;
-   background-color: green;
+   background-color:#326289;
    width:10px;
    height:15px;
  }
 
  .rec20 {
    position: absolute;
-   background-color: green;
+   background-color:#326289;
    width:10px;
    height:20px;
+ }
+
+ .rec35 {
+   position: absolute;
+   background-color:#326289;
+   width:10px;
+   height:35px;
  }
 
 
  .rec45 {
    position: absolute;
-   background-color: black;
+   background-color:#326289;
    width:10px;
    height:45px;
  }
 
- .bar40 {
-   position: absolute;
-   background-color: blue;
-   width:40px;
-   height:10px;
- }
 
  .rec50 {
    position: absolute;
-   background-color: black;
+   background-color:#326289;
    width:10px;
    height:50px;
  }
 
+ .rec65 {
+   position: absolute;
+   background-color:#326289;
+   width:10px;
+   height:65px;
+ }
 
+ .rec70 {
+   position: absolute;
+   background-color:#326289;
+   width:10px;
+   height:80px;
+ }
+
+ .rec80 {
+   position: absolute;
+   background-color:#326289;
+   width:10px;
+   height:80px;
+ }
+
+ .bar20 {
+   position: absolute;
+   background-color:#F9B300;
+   width:20px;
+   height:10px;
+ }
+
+ .bar35 {
+   position: absolute;
+   background-color:#F9B300;
+   width:35px;
+   height:10px;
+ }
+
+ .bar40 {
+   position: absolute;
+   background-color:#F9B300;
+   width:40px;
+   height:10px;
+ }
 
 #A {
-  position:absolute;
-  left:500px;
-  top:200px;
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#B {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#C {
+  position:relative;
+  width:35px;
+  height:80px;
+  margin-left:10px;
+}
+
+#D {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#E {
+  position:relative;
+  width:35px;
+  height:80px;
+  margin-left:10px;
+}
+
+#F {
+  position:relative;
+  width:35px;
+  height:80px;
+  margin-left:10px;
+}
+
+#G {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#H {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#I {
+  position:relative;
+  width:20px;
+  height:80px;
+  margin-left:10px;
+
+}
+
+#J {
+  position:relative;
+  width:35px;
+  height:80px;
+  margin-left:10px;
+}
+
+#K {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#L {
+  position:relative;
+  width:35px;
+  height:80px;
+  margin-left:10px;
+}
+
+#M {
+  position:relative;
+  width:50px;
+  height:80px;
+  margin-left:10px;
+}
+
+#N {
+  position:relative;
+  width:50px;
+  height:80px;
+  margin-left:10px;
+}
+
+#O {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#P {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#Q {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#R {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#S {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#T {
+  position:relative;
+  width:50px;
+  height:80px;
+  margin-left:10px;
+}
+
+#U {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#V {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#W {
+  position:relative;
+  width:50px;
+  height:80px;
+  margin-left:10px;
+}
+
+#X {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#Y {
+  position:relative;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+#Z {
+  position:relative;
+  width:30px;
+  height:80px;
+  margin-left:10px;
 }
