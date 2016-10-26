@@ -1,0 +1,361 @@
+.flex-container {
+  position:absolute;
+  width:100%;
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
+  align-items:flex-end;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 99vh; /*responsive bottom*/
+  cursor: url('../images/hammer.gif'), default;
+
+}
+
+.flex-container2 {
+  position:absolute;
+  width:50px;
+  left:95%;
+  display:flex;
+  flex-flow:row;
+  justify-content:flex-end;;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 99vh; /*responsive bottom*/
+  cursor: url('../images/hammer.gif'), default;
+
+}
+
+a{
+  cursor: url('../images/hand.png'), default;
+}
+
+cusor:active{
+  transform: translate(3px,3px);
+}
+
+.word {
+  position:relative;
+  width:40px;
+  height:620px;
+}
+
+.word:not(:focus):hover {
+  animation: rotate 0.7s infinite;
+  transform-origin: bottom;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.word:focus {
+  outline:none;
+}
+
+.word:focus > #H {
+  animation: HFall 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes HFall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(20deg);
+  }
+
+  100% {
+    top:560px;
+    left:100px;
+    transform: rotate(90deg);
+  }
+}
+
+.word:focus > #O1 {
+  animation: O1Fall 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes O1Fall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    top:480px;
+    left:-140px;
+    transform: rotate(-90deg);
+  }
+}
+
+.word:focus > #M {
+  animation: MFall 0.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes MFall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(20deg);
+  }
+
+  100% {
+    top:385px;
+    left:160px;
+    transform: rotate(120deg);
+  }
+}
+
+.word:focus > #E {
+  animation: EFall 1.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes EFall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top:285px;
+    left:100px;
+    transform: rotate(60deg);
+  }
+}
+
+.word:focus > #W {
+  animation: WFall 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes WFall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top:185px;
+    left:50px;
+    transform: rotate(40deg);
+  }
+}
+
+.word:focus > #O2 {
+  animation: O2Fall 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.05s;
+}
+
+@keyframes O2Fall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top:165px;
+    left:-70px;
+    transform: rotate(-50deg);
+  }
+}
+
+.word:focus > #R {
+  animation: RFall 1.2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes RFall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top:45px;
+    left:-46px;
+    transform: rotate(-40deg);
+  }
+}
+
+.word:focus > #K {
+  animation: KFall 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes KFall {
+  0% {
+    top:0px;
+    left:0px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top:-5px;
+    left:20px;
+    transform: rotate(-60deg);
+  }
+}
+
+ .square {
+   position: absolute;
+   background-color: #ED4512;
+   width:10px;
+   height:10px;
+ }
+
+ .rec15 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:15px;
+ }
+
+ .rec20 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:20px;
+ }
+
+ .rec35 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:35px;
+ }
+
+ .rec45 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:45px;
+ }
+
+ .rec50 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:50px;
+ }
+
+ .rec65 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:65px;
+ }
+
+ .rec70 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:80px;
+ }
+
+ .rec80 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:80px;
+ }
+
+ .bar20 {
+   position: absolute;
+   background-color:#F9B300;
+   width:20px;
+   height:10px;
+ }
+
+ .bar35 {
+   position: absolute;
+   background-color:#F9B300;
+   width:35px;
+   height:10px;
+ }
+
+ .bar40 {
+   position: absolute;
+   background-color:#F9B300;
+   width:40px;
+   height:10px;
+ }
+
+ #H {
+   position:absolute;
+   float:left;
+   width:40px;
+   height:80px;
+ }
+
+ #O1 {
+   position:absolute;
+   float:left;
+   width:40px;
+   height:80px;
+ }
+
+ #O2 {
+   position:absolute;
+   float:left;
+   width:40px;
+   height:80px;
+ }
+
+
+ #M {
+   position:absolute;
+   float:left;
+   width:50px;
+   height:80px;
+ }
+
+ #E {
+   position:absolute;
+   float:left;
+   width:35px;
+   height:80px;
+ }
+
+ #W {
+   position:absolute;
+   float:left;
+   width:50px;
+   height:80px;
+ }
+
+ #R {
+   position:absolute;
+   float:left;
+   width:40px;
+   height:80px;
+ }
+
+ #K {
+   position:absolute;
+   float:left;
+   width:40px;
+   height:80px;
+ }
+
+ #right {
+   position:relative;
+   margin-right: 20px;
+   width:30px;
+   height:30px;
+ }

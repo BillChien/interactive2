@@ -1,22 +1,20 @@
+
 .flex-container {
   width:100%;
   display:flex;
-  flex-flow:row wrap-reverse;
+  flex-direction:row;
   justify-content:center;
-  align-items:flex-start;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-items:flex-end;
   align-content:flex-start;
-  min-height: 98vh; /*responsive bottom*/
-  cursor: url('../images/zoomarrow.png'), default;
+  min-height: 99vh; /*responsive bottom*/
+  cursor: url('../images/hammer.gif'), default;
 
 }
 
-
-.squarehalf {
-  position: absolute;
-  background-color: #ED4512;
-  width:5px;
-  height:10px;
+a {
+  cursor: url('../images/hand.png'), pointer;
 }
+
 
  .square {
    position: absolute;
@@ -39,33 +37,11 @@
    height:20px;
  }
 
- .rec25 {
-   position: absolute;
-   background-color:#2C365B;
-   width:10px;
-   height:20px;
- }
-
-
- .rec30 {
-   position: absolute;
-   background-color:#2C365B;
-   width:10px;
-   height:30px;
- }
-
  .rec35 {
    position: absolute;
    background-color:#2C365B;
    width:10px;
    height:35px;
- }
-
- .rec40 {
-   position: absolute;
-   background-color:#2C365B;
-   width:10px;
-   height:40px;
  }
 
 
@@ -83,15 +59,6 @@
    width:10px;
    height:50px;
  }
-
- .rec60 {
-   position: absolute;
-   background-color:#2C365B;
-   width:10px;
-   height:60px;
- }
-
-
 
  .rec65 {
    position: absolute;
@@ -118,13 +85,6 @@
    position: absolute;
    background-color:#F9B300;
    width:20px;
-   height:10px;
- }
-
- .bar30 {
-   position: absolute;
-   background-color:#F9B300;
-   width:30px;
    height:10px;
  }
 
@@ -165,6 +125,7 @@
 
 #D {
   position:relative;
+  float:left;
   width:40px;
   height:80px;
   margin-left:10px;
@@ -172,6 +133,7 @@
 
 #E {
   position:relative;
+  float:left;
   width:35px;
   height:80px;
   margin-left:10px;
@@ -264,6 +226,7 @@
 
 #R {
   position:relative;
+  float:left;
   width:40px;
   height:80px;
   margin-left:10px;
@@ -271,6 +234,7 @@
 
 #S {
   position:relative;
+  float:left;
   width:40px;
   height:80px;
   margin-left:10px;
@@ -278,6 +242,7 @@
 
 #T {
   position:relative;
+  float:left;
   width:50px;
   height:80px;
   margin-left:10px;
@@ -321,122 +286,6 @@
 #Z {
   position:relative;
   width:30px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num0 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num1 {
-  position:relative;
-  width:15px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num2 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num3 {
-  position:relative;
-  width:35px;
-  height:80px;
-  margin-left:5px;
-}
-
-#Num4 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:15px;
-}
-
-#Num5 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num6 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num7 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num8 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#Num9 {
-  position:relative;
-  width:40px;
-  height:80px;
-  margin-left:10px;
-}
-
-#comma {
-  position:relative;
-  width:10px;
-  height:20px;
-  margin-left:5px;
-  margin-bottom:-10px;
-}
-
-#period {
-  position:relative;
-  width:10px;
-  height:10px;
-  margin-left:10px;
-}
-
-
-#quote1 {
-  position:relative;
-  width:30px;
-  height:20px;
-  margin-left:10px;
-  margin-bottom: 60px;
-}
-
-#quote2 {
-  position:relative;
-  width:30px;
-  height:20px;
-  margin-left:10px;
-  margin-bottom: 60px;
-}
-
-#question {
-  position:relative;
-  width:35px;
-  height:80px;
-  margin-left:10px;
-}
-
-#exclamation {
-  position:relative;
-  width:20px;
   height:80px;
   margin-left:10px;
 }
