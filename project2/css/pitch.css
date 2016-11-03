@@ -1,0 +1,330 @@
+body {
+  animation: colorchange 10s infinite;
+  overflow: hidden;
+}
+
+@keyframes colorchange {
+  0% {background-color: white;}
+  25% {background-color: #F9B300;}
+  50% {background-color: #ED4512;}
+  75% {background-color: #F9B300;}
+  100% {background-color: white;}
+}
+
+.flex-container {
+  position:absolute;
+  width:100%;
+  display:flex;
+  flex-flow:row wrap-reverse;
+  justify-content:center;
+  align-items:flex-start;;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:flex-start;
+  min-height: 103vh; /*responsive bottom*/
+  cursor: url('../images/hammer.gif'), default;
+
+}
+
+.flex-container2 {
+  position:absolute;
+  width:50px;
+  left:95%;
+  display:flex;
+  flex-flow:row;
+  justify-content:flex-end;;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 106vh; /*responsive bottom*/
+}
+
+a {
+  cursor: url('../images/hand.png'), pointer;
+}
+
+
+.square {
+  position: absolute;
+  background-color: #ED4512;
+  width:10px;
+  height:10px;
+}
+
+.rec15 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:15px;
+}
+
+.rec20 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:20px;
+}
+
+.rec25 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:20px;
+}
+
+.rec30 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:30px;
+}
+
+.rec35 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:35px;
+}
+
+.rec40 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:40px;
+}
+
+.rec45 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:45px;
+}
+
+.rec50 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:50px;
+}
+
+.rec60 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:60px;
+}
+
+.rec65 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:65px;
+}
+
+.rec70 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:80px;
+}
+
+.rec80 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:80px;
+}
+
+.bar20 {
+  position: absolute;
+  background-color:#F9B300;
+  width:20px;
+  height:10px;
+}
+
+.bar30 {
+  position: absolute;
+  background-color:#F9B300;
+  width:30px;
+  height:10px;
+}
+
+.bar35 {
+  position: absolute;
+  background-color:#F9B300;
+  width:35px;
+  height:10px;
+}
+
+.bar40 {
+  position: absolute;
+  background-color:#F9B300;
+  width:40px;
+  height:10px;
+}
+
+#P {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+}
+
+#I {
+  position:relative;
+  float:left;
+  width:20px;
+  height:80px;
+  margin-left:10px;
+}
+
+#T {
+  position:relative;
+  float:left;
+  width:50px;
+  height:80px;
+  margin-left:10px;
+}
+
+#C {
+  position:relative;
+  float:left;
+  width:35px;
+  height:80px;
+  margin-left:7px;
+}
+
+#H {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+  margin-left:10px;
+}
+
+.word {
+  position:relative;
+  width:224px;
+  height:120px;
+  cursor: url('../images/hammer.gif'), default;
+  animation: falldown 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes falldown {
+  0% {
+    margin-bottom: 25%;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.word:not(:active):hover {
+  animation: breath 5s infinite;
+  transform-origin: bottom;
+}
+
+.word:focus { outline:none;}
+
+@keyframes breath {
+  0% {
+    transform: scale(1.0);
+    transform-origin: bottom;
+  }
+
+  50% {
+    transform: scale(1.1);
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: scale(1.0);
+    transform-origin: bottom;
+  }
+}
+
+.word:active{
+  animation: Strech 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Strech {
+  0% {
+  }
+
+  50%{
+    width: 300px;
+  }
+
+  100% {
+  }
+}
+
+.word:active > #P {
+  animation: Pstrech 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Pstrech {
+  0% {
+  }
+
+  50%{
+    margin-right: 20px;
+  }
+
+  100% {
+  }
+}
+
+.word:active > #I {
+  animation: Istrech 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Istrech {
+  0% {
+  }
+
+  50%{
+    margin-right: 20px;
+  }
+
+  100% {
+  }
+}
+
+.word:active > #C {
+  animation: Cstrech 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Cstrech {
+  0% {
+  }
+
+  50%{
+    margin-left: 20px;
+  }
+
+  100% {
+  }
+}
+
+.word:active > #H {
+  animation: Hstrech 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Hstrech {
+  0% {
+  }
+
+  50%{
+    margin-left: 20px;
+  }
+
+  100% {
+  }
+}

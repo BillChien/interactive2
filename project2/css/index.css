@@ -1,13 +1,115 @@
+body {
+  animation: colorchange 10s infinite;
+  overflow: hidden;
+}
+
+@keyframes colorchange {
+  0% {background-color: white;}
+  30% {background-color: white;}
+  32% {background-color: #ED4512;}
+  34% {background-color: #F9B300;}
+  36% {background-color: #2C365B;}
+  38% {background-color: white;}
+  80% {background-color: white;}
+  82% {background-color: #ED4512;}
+  84% {background-color: #F9B300;}
+  86% {background-color: #2C365B;}
+  88% {background-color: white;}
+  92% {background-color: white;}
+  94% {background-color: #ED4512;}
+  96% {background-color: #F9B300;}
+  98% {background-color: #2C365B;}
+  100% {background-color: white;}
+}
+
 .flex-container {
+  position:absolute;
   width:100%;
   display:flex;
   flex-flow:row wrap-reverse;
   justify-content:center;
   align-items:flex-start;/*supoosed to be flex-end, but notice I put wrap-reverse*/
   align-content:flex-start;
-  min-height: 98vh; /*responsive bottom*/
-  cursor: url('../images/zoomarrow.png'), default;
+  min-height: 99vh; /*responsive bottom*/
+  cursor: ew-resize;
+}
 
+.flex-container2 {
+  position:absolute;
+  width:50px;
+  left:95%;
+  display:flex;
+  flex-flow:row;
+  justify-content:flex-end;;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 106vh; /*responsive bottom*/
+}
+
+a {
+  cursor: url('../images/hand.png'), pointer;
+}
+
+.flex-container3 {
+  position:absolute;
+  width:100%;
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 60vh; /*responsive bottom*/
+  cursor: ew-resize;
+}
+
+.flex-container4 {
+  position:absolute;
+  width:100%;
+  display:flex;
+  flex-flow:row wrap-reverse;
+  justify-content:center;
+  align-items:flex-start;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:flex-start;
+  min-height: 99vh; /*responsive bottom*/
+  cursor: ew-resize;
+}
+
+.flex-container5 {
+  animation: colorchange 10s infinite;
+  position:relative;
+  flex-grow:0;
+  flex-shrink:1;
+  width:100%;
+  display:flex;
+  flex-flow:row wrap-reverse;
+  justify-content:center;
+  align-items:flex-start;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:flex-start;
+  min-height: 60vh;
+  opacity:0;
+  transition: opacity 3s ease-in-out;
+}
+
+.flex-container5:hover {
+  opacity:1;
+}
+
+
+#textbox {
+  font-size: 14px;
+  text-align: left;
+  line-height: 20px;
+  height:100px;
+  width:600px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#title {
+  display:flex;
+  width:430px;
+  height:80px;
+  white-space:nowrap;
 }
 
 
@@ -142,11 +244,20 @@
    height:10px;
  }
 
+ #dash {
+   position:relative;
+   width:20px;
+   height:10px;
+   margin-top: 30px;
+   margin-left:5px;
+ }
+
 #A {
   position:relative;
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #B {
@@ -154,6 +265,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #C {
@@ -161,6 +273,7 @@
   width:35px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #D {
@@ -168,6 +281,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #E {
@@ -175,6 +289,7 @@
   width:35px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #F {
@@ -182,6 +297,7 @@
   width:35px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #G {
@@ -189,6 +305,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #H {
@@ -196,6 +313,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #I {
@@ -203,7 +321,7 @@
   width:20px;
   height:80px;
   margin-left:10px;
-
+  margin-bottom:2px;
 }
 
 #J {
@@ -211,6 +329,7 @@
   width:35px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #K {
@@ -218,6 +337,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #L {
@@ -225,6 +345,7 @@
   width:35px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #M {
@@ -232,6 +353,7 @@
   width:50px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #N {
@@ -239,6 +361,7 @@
   width:50px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #O {
@@ -246,6 +369,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #P {
@@ -253,6 +377,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Q {
@@ -260,6 +385,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #R {
@@ -267,6 +393,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #S {
@@ -274,6 +401,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #T {
@@ -281,6 +409,7 @@
   width:50px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #U {
@@ -288,6 +417,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #V {
@@ -295,6 +425,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #W {
@@ -302,6 +433,7 @@
   width:50px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #X {
@@ -309,6 +441,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Y {
@@ -316,6 +449,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Z {
@@ -323,6 +457,7 @@
   width:30px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num0 {
@@ -330,6 +465,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num1 {
@@ -337,6 +473,7 @@
   width:15px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num2 {
@@ -344,6 +481,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num3 {
@@ -351,6 +489,7 @@
   width:35px;
   height:80px;
   margin-left:5px;
+  margin-bottom:2px;
 }
 
 #Num4 {
@@ -358,6 +497,7 @@
   width:40px;
   height:80px;
   margin-left:15px;
+  margin-bottom:2px;
 }
 
 #Num5 {
@@ -365,6 +505,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num6 {
@@ -372,6 +513,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num7 {
@@ -379,6 +521,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num8 {
@@ -386,6 +529,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #Num9 {
@@ -393,6 +537,7 @@
   width:40px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #comma {
@@ -401,6 +546,7 @@
   height:20px;
   margin-left:5px;
   margin-bottom:-10px;
+  margin-bottom: 30px;
 }
 
 #period {
@@ -408,6 +554,7 @@
   width:10px;
   height:10px;
   margin-left:10px;
+  margin-bottom: 40px;
 }
 
 
@@ -416,7 +563,7 @@
   width:30px;
   height:20px;
   margin-left:10px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 #quote2 {
@@ -424,7 +571,7 @@
   width:30px;
   height:20px;
   margin-left:10px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 #question {
@@ -432,6 +579,7 @@
   width:35px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }
 
 #exclamation {
@@ -439,4 +587,5 @@
   width:20px;
   height:80px;
   margin-left:10px;
+  margin-bottom:2px;
 }

@@ -1,0 +1,441 @@
+body {
+  animation: colorchange 0.5s infinite;
+  overflow: hidden;
+}
+
+@keyframes colorchange {
+  0% {background-color: white;}
+  50% {background-color: #2C365B;}
+  100% {background-color: white;}
+}
+
+.flex-container {
+  position:absolute;
+  width:100%;
+  display:flex;
+  flex-flow:row wrap-reverse;
+  justify-content:center;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:flex-start;
+  min-height: 98vh; /*responsive bottom*/
+  cursor: url('../images/hammer.gif'), default;
+
+}
+
+.flex-container2 {
+  position:absolute;
+  width:50px;
+  left:95%;
+  display:flex;
+  flex-flow:row;
+  justify-content:flex-end;;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 106vh; /*responsive bottom*/
+}
+
+a {
+  cursor: url('../images/hand.png'), pointer;
+}
+
+
+ .square {
+   position: absolute;
+   background-color: #ED4512;
+   width:10px;
+   height:10px;
+ }
+
+ .rec15 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:15px;
+ }
+
+ .rec20 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:20px;
+ }
+
+ .rec35 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:35px;
+ }
+
+ .rec45 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:45px;
+ }
+
+ .rec50 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:50px;
+ }
+
+ .rec65 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:65px;
+ }
+
+ .rec70 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:80px;
+ }
+
+ .rec80 {
+   position: absolute;
+   background-color:#2C365B;
+   width:10px;
+   height:80px;
+ }
+
+ .bar20 {
+   position: absolute;
+   background-color:#F9B300;
+   width:20px;
+   height:10px;
+ }
+
+ .bar30 {
+   position: absolute;
+   background-color:#F9B300;
+   width:30px;
+   height:10px;
+ }
+
+ .bar35 {
+   position: absolute;
+   background-color:#F9B300;
+   width:35px;
+   height:10px;
+ }
+
+ .bar40 {
+   position: absolute;
+   background-color:#F9B300;
+   width:40px;
+   height:10px;
+ }
+
+
+ #A {
+   position:relative;
+   float:left;
+   margin-top:0px;
+   margin-left:0px;
+   width:40px;
+   height:80px;
+   transform: scale(2.5);
+   transform-origin: top;
+ }
+
+#E {
+  position:relative;
+  float:left;
+  width:35px;
+  height:80px;
+  margin-left:80px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+#I {
+  position:relative;
+  float:left;
+  width:20px;
+  height:80px;
+  margin-left:60px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+#G {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+  margin-left:60px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+#M {
+  position:relative;
+  float:left;
+  width:50px;
+  height:80px;
+  margin-left:90px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+#N {
+  position:relative;
+  float:left;
+  width:50px;
+  height:80px;
+  margin-left:80px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+#S {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+  margin-left:70px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+#T {
+  position:relative;
+  float:left;
+  width:50px;
+  height:80px;
+  margin-left:90px;
+  transform: scale(2.5);
+  transform-origin: top;
+}
+
+.word {
+  position:relative;
+  width:1100px;
+  height:200px;
+  cursor: url('../images/hammer.gif'), default;
+}
+
+.word:not(:focus):hover {
+  animation: sshake 0.5s infinite;
+  transform-origin: bottom;
+}
+
+.word:focus { outline:none;}
+
+@keyframes sshake {
+  0% {
+    transform: scaleX(1.9) scaleY(1.3);
+    margin-left:80px;
+    margin-top:-70px;
+  }
+
+  15% {
+    transform: scaleX(1.3) scaleY(1.2);
+    margin-left:-80px;
+    margin-top:70px;
+  }
+
+  25% {
+    transform: scaleX(1.3) scaleY(1.2);
+    margin-left:-10px;
+    margin-top:-100px;
+  }
+
+  60% {
+    transform: scaleX(1.2) scaleY(1.5);
+    margin-left:-150px;
+    margin-top:200px;
+  }
+
+  80% {
+    transform: scaleX(1.2) scaleY(1.5);
+    margin-right:-80px;
+    margin-top:50px;
+  }
+
+  100% {
+    transform: scaleX(1.2) scaleY(1.4);
+    margin-left:-10px;
+    margin-top:10px;
+  }
+}
+
+.word:focus > #A {
+  animation: Ablow 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Ablow {
+  0% {
+    margin-top:0px;
+    margin-left:0px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:-500px;
+    margin-left:-500px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #S {
+  animation: Sblow 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Sblow {
+  0% {
+    margin-top:0px;
+    margin-left:100px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:-900px;
+    margin-left:100px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #I {
+  animation: Iblow 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Iblow {
+  0% {
+    margin-top:0px;
+    margin-left:400px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:1100px;
+    margin-left:-100px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #G {
+  animation: Gblow 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Gblow {
+  0% {
+    margin-top:0px;
+    margin-left:-100px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:200px;
+    margin-left:-500px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #N {
+  animation: Nblow 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Nblow {
+  0% {
+    margin-top:-200px;
+    margin-left:700px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:-1000px;
+    margin-left:800px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #M {
+  animation: Mblow 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Mblow {
+  0% {
+    margin-top:0px;
+    margin-left:500px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:-1000px;
+    margin-left:4000px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #E {
+  animation: Eblow 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Eblow {
+  0% {
+    margin-top:0px;
+    margin-left:2000px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:0px;
+    margin-left:4000px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}
+
+.word:focus > #T {
+  animation: Mblow 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Tblow {
+  0% {
+    margin-top:-200px;
+    margin-left:0px;
+    transform: rotate(40deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+  100% {
+    margin-top:-1200px;
+    margin-left:0px;
+    transform: rotate(180deg);
+    transform: scale(2.5);
+    transform-origin: top;
+  }
+}

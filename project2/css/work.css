@@ -1,0 +1,314 @@
+body {
+  animation: colorchange 1.2s infinite;
+  overflow: hidden;
+}
+
+@keyframes colorchange {
+  0% {background-color: white;}
+  50% {background-color: #F9B300;}
+  100% {background-color: white;}
+}
+
+.flex-container {
+  position:absolute;
+  width:100%;
+  display:flex;
+  flex-flow:row wrap-reverse;
+  justify-content:center;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:flex-start;
+  min-height: 98vh; /*responsive bottom*/
+  cursor: url('../images/hammer.gif'), default;
+
+}
+
+.flex-container2 {
+  position:absolute;
+  width:50px;
+  left:95%;
+  display:flex;
+  flex-flow:row;
+  justify-content:flex-end;;
+  align-items:center;/*supoosed to be flex-end, but notice I put wrap-reverse*/
+  align-content:center;
+  min-height: 106vh; /*responsive bottom*/
+}
+
+a {
+  cursor: url('../images/hand.png'), pointer;
+}
+
+
+.square {
+  position: absolute;
+  background-color: #ED4512;
+  width:10px;
+  height:10px;
+}
+
+.rec15 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:15px;
+}
+
+.rec20 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:20px;
+}
+
+.rec25 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:20px;
+}
+
+.rec30 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:30px;
+}
+
+.rec35 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:35px;
+}
+
+.rec40 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:40px;
+}
+
+.rec45 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:45px;
+}
+
+.rec50 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:50px;
+}
+
+.rec60 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:60px;
+}
+
+.rec65 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:65px;
+}
+
+.rec70 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:80px;
+}
+
+.rec80 {
+  position: absolute;
+  background-color:#2C365B;
+  width:10px;
+  height:80px;
+}
+
+.bar20 {
+  position: absolute;
+  background-color:#F9B300;
+  width:20px;
+  height:10px;
+}
+
+.bar30 {
+  position: absolute;
+  background-color:#F9B300;
+  width:30px;
+  height:10px;
+}
+
+.bar35 {
+  position: absolute;
+  background-color:#F9B300;
+  width:35px;
+  height:10px;
+}
+
+.bar40 {
+  position: absolute;
+  background-color:#F9B300;
+  width:40px;
+  height:10px;
+}
+
+#W {
+  position:relative;
+  float:left;
+  width:50px;
+  height:80px;
+  transform: scale(1.5);
+  transform-origin: top;
+}
+
+#O {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+  margin-left:35px;
+  transform: scale(1.5);
+  transform-origin: top;
+}
+
+#R {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+  margin-left:35px;
+  transform: scale(1.5);
+  transform-origin: top;
+}
+
+#K {
+  position:relative;
+  float:left;
+  width:40px;
+  height:80px;
+  margin-left:35px;
+  transform: scale(1.5);
+  transform-origin: top;
+}
+
+
+
+.word {
+  position:relative;
+  width:275px;
+  height:120px;
+  cursor: url('../images/hammer.gif'), default;
+}
+
+.word:not(:focus):hover {
+  animation: fallroll 5s infinite;
+  transform-origin: bottom;
+  animation-timing-function: linear;
+}
+
+.word:focus { outline:none;}
+
+@keyframes fallroll {
+  0% {
+    margin-top: -1100px
+  }
+
+  100% {
+    margin-top: 1000px
+  }
+}
+
+
+.word:focus > #W {
+  animation: Wblow 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Wblow {
+  0% {
+    margin-top:0px;
+    transform: rotate(40deg);
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+  100% {
+    margin-top:-500px;
+    margin-left: -1100px;
+    transform: rotate(90deg);
+    transform: scale(10);
+    transform-origin: center;
+  }
+}
+
+
+.word:focus > #K {
+  animation: Kblow 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Kblow {
+  0% {
+    margin-top:-20px;
+    margin-left:80px;
+    transform: rotate(40deg);
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+  100% {
+    margin-top:100px;
+    margin-left: 1200px;
+    transform: rotate(90deg);
+    transform: scale(10);
+    transform-origin: center;
+  }
+}
+
+.word:focus > #O {
+  animation: Oblow 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Oblow {
+  0% {
+    margin-top:0px;
+    margin-left:0px;
+    transform: rotate(40deg);
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+  100% {
+    margin-top:-200px;
+    margin-left:400px;
+    transform: rotate(90deg);
+    transform: scale(0);
+    transform-origin: center;
+  }
+}
+
+.word:focus > #R {
+  animation: Rblow 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Rblow {
+  0% {
+    margin-top:0px;
+    margin-left:0px;
+    transform: rotate(40deg);
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+  100% {
+    margin-top:400px;
+    margin-left:-300px;
+    transform: rotate(90deg);
+    transform: scale(0);
+    transform-origin: center;
+  }
+}
