@@ -96,11 +96,14 @@ a {
 
 
 #textbox {
+  font-family:'Raleway', helvetica, sans-serif;
+  letter-spacing:0.03em;
+  font-weight: 400;
   font-size: 14px;
   text-align: left;
   line-height: 20px;
   height:100px;
-  width:600px;
+  width:540px;
   margin-left: 20px;
   margin-right: 20px;
 }
