@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px auto;
+	background: white;
+	position: relative;
+}
+
+.ball{
+    height: 200px;
+    width: 200px;
+		background-color:red;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+		background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    position: absolute;
+		left: 42%;
+		bottom: 40%;
+		-webkit-animation: bounce 1s infinite;
+}
+
+.ball:hover {
+	 -webkit-animation: bounce2 0.5s infinite;
+	 background-color:white;
+}
+
+
+@keyframes bounce {
+	0%{bottom: 40%;}
+
+	16% {bottom: 10px;}
+
+	32% {bottom:25%;}
+
+	48% {bottom:10px;}
+
+	64% {bottom:10%;}
+
+	80% {bottom:10px;}
+
+	100% {bottom:40%;}
+
+}
+
+@keyframes bounce2 {
+	0%{top: 40%;}
+
+	20% {top: 10px;}
+
+	40% {top:25%;}
+
+	60% {top:10px;}
+
+	80% {top:10%;}
+
+	100% {top:10px;}
+
+
+}
