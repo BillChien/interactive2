@@ -1,0 +1,92 @@
+body {
+  background-color: #F4F4F5;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("../fonts/Gotham-Black.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: Pressura;
+  src: url("../fonts/GT-Pressura-Light.otf") format("opentype");
+  }
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../fonts/HelveticaNeueLTPro-Th.otf") format("opentype");
+  }
+
+#layer_bottom {
+  position:absolute;
+  display:flex;
+  width:100%;
+  height:100vh;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.white_space {
+  height:100vh;
+  width:45%;
+  flex-grow:1;
+  flex-shrink:3:
+}
+
+.main_content {
+  height:100vh;
+  width:33%;
+  flex-grow:3;
+}
+
+.side_content {
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height:90vh;
+  width:21%;
+  padding-top: 15px;
+  flex-grow:1;
+}
+
+p {
+  font-family:"HelveticaNeue";
+  font-size: 13.3px;
+  margin-left: 60px;
+  margin-right: 60px;
+  widows: 4;
+  orphans: 4;
+  hyphens:auto;
+  letter-spacing: .06em;
+  word-spacing: .02em;
+  line-height: 1.7em;
+
+}
+
+.layer_covers {
+  position:absolute;
+  display:flex;
+  margin-left: -8px;
+  margin-top: -8px;
+  width:5%;
+  height:100vh;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background:gray;
+}
+
+#covers {
+  flex-grow:1;
+  position:relative;
+}
+
+.layer_covers,#covers,.song1,.song2,.song3,.song4,.song5,.song6,.song7,.song8,.song9,.song10 {
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.layer_covers_expand
+{ width:100%;}
+
+.covers_expand
+{width:100vh;}
