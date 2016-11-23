@@ -51,16 +51,50 @@ body {
   flex-grow:1;
 }
 
-.layer_video1 {
+.video1, .video2, .video3 {
   position:absolute;
-  margin-left: -8px;
-  margin-top: -8px;
   width:100%;
   height:100vh;
-  background: gray;
   display:none;
 }
 
+.layer_video{
+  position:absolute;
+  margin-left:4%;
+  margin-top:-8px;
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  opacity:0;
+}
+
+.song_info {
+  position:relative;
+  width:24%;
+  height:100vh;
+}
+
+.video_window {
+  position:relative;
+  margin-right:4%;
+  width:76%;
+  height:100vh;
+}
+
+
+#layer_rs {
+  position:absolute;
+  width:100%;
+  height:100vh;
+}
+
+.rs {
+  width:80px;
+  opacity:0;
+  cursor:pointer;
+}
 
 
 p {
@@ -72,7 +106,7 @@ p {
   orphans: 4;
   hyphens:auto;
   letter-spacing: .06em;
-  word-spacing: .02em;
+  word-spacing: -0.1em;
   line-height: 1.7em;
 
 }
@@ -94,22 +128,73 @@ p {
   position:relative;
 }
 
-.layer_covers,#covers,.layer_video1  {
+.song1 {
+  background-image: url('../images/covers/01 crazy.jpg');
+  background-size: cover;
+}
+
+.song2 {
+  background-image: url('../images/covers/02 99 problems.jpg');
+  background-size: cover;
+}
+
+.song3 {
+  background-image: url('../images/covers/03 crazy in love.jpg');
+  background-size: cover;
+}
+
+.song4 {
+  background-image: url('../images/covers/04 hey ya.jpg');
+  background-size: cover;
+}
+
+.song5 {
+  background-image: url('../images/covers/05 mia paper planes.jpg');
+  background-size: cover;
+}
+
+.song6 {
+  background-image: url('../images/covers/06 seven nation army.jpg');
+  background-size: cover;
+}
+
+.song7 {
+  background-image: url('../images/covers/07 maps.jpg');
+  background-size: cover;
+}
+
+.song8 {
+  background-image: url('../images/covers/08 rehab.jpg');
+  background-size: cover;
+}
+
+.song9 {
+  background-image: url('../images/covers/09 beautiful day.jpg');
+  background-size: cover;
+}
+
+.song10 {
+  background-image: url('../images/covers/10 stan.jpg');
+  background-size: cover;
+}
+
+.video_frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.layer_covers,#covers,.rs,.layer_video1 {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
-.layer_covers_expand
-{ width:100%;}
+.layer_covers_expand { width:100%;}
 
-.covers_expand
-{width:100vh;}
+.covers_expand {width:92vh;}
 
-.reveal
-{
-  display:inline;
-}
+.reveal {display:inline;}
 
-.slideout
-{
-  width:0
-}
+.slideout {width:0;}
+
+.showup {opacity:1}
