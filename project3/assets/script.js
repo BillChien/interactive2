@@ -1,7 +1,12 @@
 $('document').ready(function(){
 
   $('.layer_covers').mouseenter(function() {
-    $(this).toggleClass("layer_covers_expand")
+    $(this).toggleClass("layer_covers_expand");
+    $('.layer_video1').toggleClass("slideout")
+      .one('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd',
+      function (e) {
+       '.layer_video1'.removeClass('reveal');
+   });
   });
 
   $('.layer_covers').mouseleave(function() {
@@ -76,6 +81,14 @@ $('document').ready(function(){
   });
   $('.song10').mouseleave(function() {
     $(this).removeClass("covers_expand")
+  });
+
+
+
+  $('.song1').click(function() {
+    $(this).removeClass("covers_expand");
+    $('.layer_covers').removeClass("layer_covers_expand");
+    $('.layer_video1').addClass("reveal");
   });
 
 });

@@ -27,6 +27,7 @@ body {
   flex-direction: row;
 }
 
+
 .white_space {
   height:100vh;
   width:45%;
@@ -49,6 +50,18 @@ body {
   padding-top: 15px;
   flex-grow:1;
 }
+
+.layer_video1 {
+  position:absolute;
+  margin-left: -8px;
+  margin-top: -8px;
+  width:100%;
+  height:100vh;
+  background: gray;
+  display:none;
+}
+
+
 
 p {
   font-family:"HelveticaNeue";
@@ -81,7 +94,7 @@ p {
   position:relative;
 }
 
-.layer_covers,#covers,.song1,.song2,.song3,.song4,.song5,.song6,.song7,.song8,.song9,.song10 {
+.layer_covers,#covers,.layer_video1  {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
@@ -90,3 +103,13 @@ p {
 
 .covers_expand
 {width:100vh;}
+
+.reveal
+{
+  display:inline;
+}
+
+.slideout
+{
+  width:0
+}
