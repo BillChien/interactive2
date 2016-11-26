@@ -51,7 +51,7 @@ body {
   flex-grow:1;
 }
 
-.video1, .video2, .video3 {
+.video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9, .video10 {
   position:absolute;
   width:100%;
   height:100vh;
@@ -79,8 +79,15 @@ body {
 .video_window {
   position:relative;
   margin-right:4%;
-  width:76%;
+  width:72%;
   height:100vh;
+}
+
+.logo {
+  position:absolute;
+  margin-left:78.8%;
+  margin-top:82.4vh;
+  opacity:1;
 }
 
 
@@ -122,6 +129,7 @@ p {
   flex-direction: row;
   background:gray;
 }
+
 
 #covers {
   flex-grow:1;
@@ -185,7 +193,7 @@ p {
 }
 
 
-.layer_covers,#covers,.rs,.layer_video1 {
+.layer_covers,#covers,.rs,.layer_video1, .logo {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
@@ -198,3 +206,5 @@ p {
 .slideout {width:0;}
 
 .showup {opacity:1}
+
+.fadeout {opacity:0}
