@@ -128,6 +128,7 @@ p {
   flex-wrap: nowrap;
   flex-direction: row;
   background:gray;
+  cursor: url('../images/play.png'), default;
 }
 
 
