@@ -2,7 +2,7 @@ $('document').ready(function(){
 
   $('.layer_covers').mouseenter(function() {
     $(this).removeClass("layer_covers_shrink");
-    $('.rs').toggleClass('showup');
+    $('.rs').addClass('showup');
     $('.song1').removeClass("covers_show");
     $('.song2').removeClass("covers_show");
     $('.song3').removeClass("covers_show");
@@ -13,11 +13,7 @@ $('document').ready(function(){
     $('.song8').removeClass("covers_show");
     $('.song9').removeClass("covers_show");
     $('.song10').removeClass("covers_show");
-  });
-
-  $('.layer_covers').mouseleave(function() {
-    $(this).addClass("layer_covers_shrink");
-    $('.rs').removeClass('showup');
+    $('.main_text').removeClass("gbc");
   });
 
   $('.main_text').mouseenter(function() {
@@ -26,80 +22,93 @@ $('document').ready(function(){
 
   $('.song1').mouseenter(function() {
     $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r1");
   });
 
   $('.song1').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r1");
   });
 
   $('.song2').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r2");
   });
   $('.song2').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r2");
   });
 
   $('.song3').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r3");
   });
   $('.song3').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r3");
   });
 
   $('.song4').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r4");
   });
   $('.song4').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r4");
   });
 
   $('.song5').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r5");
   });
   $('.song5').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r5");
   });
 
   $('.song6').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r6");
   });
   $('.song6').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r6");
   });
 
   $('.song7').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r7");
   });
   $('.song7').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r7");
   });
 
   $('.song8').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r8");
   });
   $('.song8').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r8");
   });
 
   $('.song9').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r9");
   });
   $('.song9').mouseleave(function() {
-    $(this).removeClass("covers_expand")
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r9");
   });
 
   $('.song10').mouseenter(function() {
-    $(this).toggleClass("covers_expand")
+    $(this).toggleClass("covers_expand");
+    $('.main_text').toggleClass("r10");
   });
   $('.song10').mouseleave(function() {
-    $(this).removeClass("covers_expand")
-  });
-
-  $('.rs').click(function() {
-    $(this).removeClass('showup');
-    $('.layer_covers').removeClass("layer_covers_expand");
-    $('.layer_video').removeClass('showup');
-    $('.logo').removeClass('fadeout');
+    $(this).removeClass("covers_expand");
+    $('.main_text').removeClass("r10");
   });
 
   $('.song1').click(function() {
@@ -120,6 +129,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song1_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song2').click(function() {
@@ -140,6 +151,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song2_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song3').click(function() {
@@ -160,6 +173,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song3_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song4').click(function() {
@@ -180,6 +195,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song4_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song5').click(function() {
@@ -200,6 +217,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song5_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song6').click(function() {
@@ -220,6 +239,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song6_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song7').click(function() {
@@ -240,6 +261,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song7_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song8').click(function() {
@@ -260,6 +283,8 @@ $('document').ready(function(){
     $('.video9').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song8_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song9').click(function() {
@@ -280,6 +305,8 @@ $('document').ready(function(){
     $('.video8').removeClass('reveal');
     $('.video10').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song9_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
   $('.song10').click(function() {
@@ -300,6 +327,8 @@ $('document').ready(function(){
     $('.video8').removeClass('reveal');
     $('.video9').removeClass('reveal');
     $('.logo').addClass('fadeout');
+    $('.song10_video')[0].src += "&autoplay=1";
+    $('.main_text').addClass("gbc");
   });
 
 
