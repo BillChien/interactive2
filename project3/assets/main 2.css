@@ -18,28 +18,6 @@ body {
   src: url("../fonts/HelveticaNeueLTPro-Th.otf") format("opentype");
   }
 
-#layer_bottom {
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100vh;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-
-
-.white_space {
-  height:100vh;
-  width:45%;
-  flex-grow:1;
-  flex-shrink:3:
-}
-
-.main_content {
-  height:100vh;
-  width:33%;
-  flex-grow:3;
-}
 
 .side_content {
   display:flex;
@@ -54,16 +32,16 @@ body {
 .video1, .video2, .video3, .video4, .video5, .video6, .video7, .video8, .video9, .video10 {
   position:absolute;
   width:100%;
-  height:100vh;
+  height:101vh;
   display:none;
 }
 
 .layer_video{
   position:absolute;
   margin-left:4%;
-  margin-top:-8px;
+  margin-top: -9px;
   width:100%;
-  height:100vh;
+  height:101vh;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -122,19 +100,28 @@ p {
   position:absolute;
   display:flex;
   margin-left: -8px;
-  margin-top: -8px;
-  width:28.5%;
-  height:100vh;
+  margin-top: -9px;
+  width:100%;
+  height:101vh;
   flex-wrap: nowrap;
   flex-direction: row;
   background:gray;
   cursor: url('../images/disk.png'), default;
 }
 
-
 #covers {
   flex-grow:1;
   position:relative;
+}
+
+
+.main_text {
+  position:relative;
+  width:1vh;
+  background-image: url('../images/Intro.png');
+  background-size: cover;
+  flex-grow:4;
+  flex-shrink:1;
 }
 
 .song1 {
@@ -208,11 +195,13 @@ p {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
-.layer_covers_expand { width:100%;}
-
 .layer_covers_shrink { width:5%;}
 
 .covers_expand {width:92vh;}
+
+.covers_show {width:20vh;}
+
+.intro_expand {width:2.8vh;}
 
 .reveal {display:inline;}
 

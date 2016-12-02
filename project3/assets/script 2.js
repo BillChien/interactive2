@@ -1,20 +1,33 @@
 $('document').ready(function(){
 
   $('.layer_covers').mouseenter(function() {
-    $(this).toggleClass("layer_covers_expand");
     $(this).removeClass("layer_covers_shrink");
     $('.rs').toggleClass('showup');
+    $('.song1').removeClass("covers_show");
+    $('.song2').removeClass("covers_show");
+    $('.song3').removeClass("covers_show");
+    $('.song4').removeClass("covers_show");
+    $('.song5').removeClass("covers_show");
+    $('.song6').removeClass("covers_show");
+    $('.song7').removeClass("covers_show");
+    $('.song8').removeClass("covers_show");
+    $('.song9').removeClass("covers_show");
+    $('.song10').removeClass("covers_show");
   });
 
   $('.layer_covers').mouseleave(function() {
-    $(this).removeClass("layer_covers_expand");
+    $(this).addClass("layer_covers_shrink");
     $('.rs').removeClass('showup');
+  });
+
+  $('.main_text').mouseenter(function() {
+    $(this).toggleClass("intro_expand");
   });
 
   $('.song1').mouseenter(function() {
     $(this).toggleClass("covers_expand");
-
   });
+
   $('.song1').mouseleave(function() {
     $(this).removeClass("covers_expand")
   });
@@ -91,6 +104,7 @@ $('document').ready(function(){
 
   $('.song1').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -110,6 +124,7 @@ $('document').ready(function(){
 
   $('.song2').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -129,6 +144,7 @@ $('document').ready(function(){
 
   $('.song3').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -148,6 +164,7 @@ $('document').ready(function(){
 
   $('.song4').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -167,6 +184,7 @@ $('document').ready(function(){
 
   $('.song5').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -186,6 +204,7 @@ $('document').ready(function(){
 
   $('.song6').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -205,6 +224,7 @@ $('document').ready(function(){
 
   $('.song7').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -224,6 +244,7 @@ $('document').ready(function(){
 
   $('.song8').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -243,6 +264,7 @@ $('document').ready(function(){
 
   $('.song9').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
@@ -262,6 +284,7 @@ $('document').ready(function(){
 
   $('.song10').click(function() {
     $(this).removeClass("covers_expand");
+    $(this).addClass("covers_show");
     $('.layer_covers').toggleClass("layer_covers_shrink");
     $('.layer_covers').removeClass("layer_covers_expand");
     $('.layer_video').addClass('showup');
