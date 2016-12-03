@@ -76,9 +76,16 @@ body {
 }
 
 .rs {
-  width:80px;
+  position:absolute;
+  margin-left:3.5%;
+  margin-top:84vh;
+  width:60px;
+  height: 80px;
   opacity:0;
   cursor:pointer;
+  background-image: url('../images/ybca.png');
+  background-size:60px, cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -118,6 +125,7 @@ p {
 .main_text {
   position:relative;
   width:1vh;
+  height:101vh;
   background-image: url('../images/Intro.png');
   background-size: cover;
   flex-grow:4;
@@ -161,6 +169,14 @@ p {
 
 .r10 {
   background-image: url('../images/rank/r10.png');
+}
+
+.notreal {
+  background-image: url('../images/notreal.png');
+}
+
+.red {
+  background-image: url('../images/ybca_r.png');
 }
 
 .gbc {

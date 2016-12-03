@@ -16,6 +16,21 @@ $('document').ready(function(){
     $('.main_text').removeClass("gbc");
   });
 
+  $('.rs').mouseenter(function() {
+    $(this).toggleClass("red");
+    $('.main_text').toggleClass("notreal");
+  });
+
+  $('.rs').mouseleave(function() {
+    $(this).removeClass("red");
+    $('.main_text').removeClass("notreal");
+  });
+
+  $('.rs').click(function() {
+    window.location.href = "https://www.ybca.org";
+  });
+
+
   $('.main_text').mouseenter(function() {
     $(this).toggleClass("intro_expand");
   });
