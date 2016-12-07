@@ -16,6 +16,15 @@ $('document').ready(function(){
     $('.main_text').removeClass("gbc");
   });
 
+  $('.layer_covers').mouseleave(function() {
+    $('.rs').removeClass("showup");
+  });
+
+  $('.resume').mouseenter(function() {
+    $('.layer_covers').toggleClass("layer_covers_shrink");
+    $('.layer_covers').removeClass("layer_covers_expand");
+  });
+
   $('.rs').mouseenter(function() {
     $(this).toggleClass("red");
     $('.main_text').toggleClass("notreal");
@@ -146,6 +155,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song1_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song2').click(function() {
@@ -168,6 +178,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song2_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song3').click(function() {
@@ -190,6 +201,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song3_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song4').click(function() {
@@ -212,6 +224,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song4_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song5').click(function() {
@@ -234,6 +247,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song5_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song6').click(function() {
@@ -256,6 +270,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song6_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song7').click(function() {
@@ -278,6 +293,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song7_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song8').click(function() {
@@ -300,6 +316,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song8_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song9').click(function() {
@@ -322,6 +339,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song9_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
   $('.song10').click(function() {
@@ -344,6 +362,7 @@ $('document').ready(function(){
     $('.logo').addClass('fadeout');
     $('.song10_video')[0].src += "&autoplay=1";
     $('.main_text').addClass("gbc");
+    $('.resume').addClass("reveal");
   });
 
 

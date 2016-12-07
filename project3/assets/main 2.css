@@ -112,7 +112,6 @@ p {
   height:101vh;
   flex-wrap: nowrap;
   flex-direction: row;
-  background:gray;
 }
 
 #covers {
@@ -129,6 +128,14 @@ p {
   background-image: url('../images/Intro.png');
   background-size: cover;
   flex-grow:4;
+}
+
+.resume {
+  position:relative;
+  width:1vh;
+  height:101vh;
+  flex-grow:0.2;
+  display:none;
 }
 
 .r1 {
